@@ -1,79 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Pune Zones</name>
+    <name>Godhpadi Buildings</name>
+    
+    <!-- Style for RED BOUNDARIES with LABELS -->
+    <Style id="redBorderWithLabel">
+      <LineStyle>
+        <color>ff0000ff</color>  <!-- Red border (AABBGGRR format) -->
+        <width>3</width>        <!-- Border thickness -->
+      </LineStyle>
+      <PolyStyle>
+        <color>4d0000ff</color>  <!-- Semi-transparent red fill (optional) -->
+        <fill>1</fill>          <!-- Fill enabled -->
+        <outline>1</outline>     <!-- Show outline -->
+      </PolyStyle>
+      <LabelStyle>
+        <color>ff0000ff</color>  <!-- Red text -->
+        <scale>1.2</scale>       <!-- Text size -->
+      </LabelStyle>
+    </Style>
 
-    <!-- Shivajinagar -->
+    <!-- ===== BUILDING 1: Sai Apartments ===== -->
     <Placemark>
-      <name>Shivajinagar</name>
+      <name>Sai Apartments</name>
+      <styleUrl>#redBorderWithLabel</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.8432,18.5325,0
-              73.8465,18.5322,0
-              73.8470,18.5350,0
-              73.8435,18.5353,0
-              73.8432,18.5325,0
+              73.9080,18.5920,0
+              73.9085,18.5920,0
+              73.9085,18.5925,0
+              73.9080,18.5925,0
+              73.9080,18.5920,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
+      <Point>
+        <coordinates>73.90825,18.59225,0</coordinates>  <!-- Label position (center) -->
+      </Point>
     </Placemark>
 
-    <!-- Kothrud -->
+    <!-- ===== BUILDING 2: Godhpadi Heights ===== -->
     <Placemark>
-      <name>Kothrud</name>
+      <name>Godhpadi Heights</name>
+      <styleUrl>#redBorderWithLabel</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.8070,18.5080,0
-              73.8110,18.5080,0
-              73.8110,18.5120,0
-              73.8070,18.5120,0
-              73.8070,18.5080,0
+              73.9070,18.5915,0
+              73.9075,18.5915,0
+              73.9075,18.5920,0
+              73.9070,18.5920,0
+              73.9070,18.5915,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
+      <Point>
+        <coordinates>73.90725,18.59175,0</coordinates>  <!-- Label position -->
+      </Point>
     </Placemark>
 
-    <!-- Hadapsar -->
+    <!-- ===== BUILDING 3: Pune Residency ===== -->
     <Placemark>
-      <name>Hadapsar</name>
+      <name>Pune Residency</name>
+      <styleUrl>#redBorderWithLabel</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.9320,18.4980,0
-              73.9360,18.4980,0
-              73.9360,18.5020,0
-              73.9320,18.5020,0
-              73.9320,18.4980,0
+              73.9090,18.5910,0
+              73.9095,18.5910,0
+              73.9095,18.5915,0
+              73.9090,18.5915,0
+              73.9090,18.5910,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
+      <Point>
+        <coordinates>73.90925,18.59125,0</coordinates>  <!-- Label position -->
+      </Point>
     </Placemark>
-
-    <!-- Koregaon Park -->
-    <Placemark>
-      <name>Koregaon Park</name>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <coordinates>
-              73.8890,18.5360,0
-              73.8925,18.5360,0
-              73.8925,18.5395,0
-              73.8890,18.5395,0
-              73.8890,18.5360,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-
   </Document>
 </kml>
