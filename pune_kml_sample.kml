@@ -30,14 +30,5 @@
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
-
-    <!-- Repeat for other zones -->
-    <Placemark>
-      <name>Kothrud</name>
-      <styleUrl>#redBorder</styleUrl>
-      <Polygon>
-        <!-- Coordinates -->
-      </Polygon>
-    </Placemark>
   </Document>
 </kml>
