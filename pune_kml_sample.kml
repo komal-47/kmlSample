@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Godhpadi Buildings</name>
-    
+  
     <!-- Style for RED BOUNDARIES with LABELS -->
     <Style id="redBorderWithLabel">
       <LineStyle>
