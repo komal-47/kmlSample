@@ -7,7 +7,7 @@
     <Style id="redBuildingStyle">
       <LineStyle>
         <color>ff0000ff</color>  <!-- Solid red border -->
-        <width>4</width>        <!-- Thicker border -->
+        <width>2</width>        <!-- Thicker border -->
       </LineStyle>
       <PolyStyle>
         <color>33ff0000</color>  <!-- Semi-transparent red fill -->
