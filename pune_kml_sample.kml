@@ -1,89 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Godhpadi Buildings</name>
-  
-    <!-- Style for RED BOUNDARIES with LABELS -->
-    <Style id="redBorderWithLabel">
+    <name>Godhpadi Buildings (Visible Boundaries)</name>
+       <name>Sai Apartments</name>
+    <!-- Style for RED BOUNDARIES -->
+    <Style id="redBuildingStyle">
       <LineStyle>
-        <color>ff0000ff</color>  <!-- Red border (AABBGGRR format) -->
-        <width>3</width>        <!-- Border thickness -->
+        <color>ff0000ff</color>  <!-- Solid red border -->
+        <width>4</width>        <!-- Thicker border -->
       </LineStyle>
       <PolyStyle>
-        <color>4d0000ff</color>  <!-- Semi-transparent red fill (optional) -->
-        <fill>1</fill>          <!-- Fill enabled -->
-        <outline>1</outline>     <!-- Show outline -->
+        <color>33ff0000</color>  <!-- Semi-transparent red fill -->
+        <fill>1</fill>          <!-- Enable fill -->
       </PolyStyle>
-      <LabelStyle>
-        <color>ff0000ff</color>  <!-- Red text -->
-        <scale>1.2</scale>       <!-- Text size -->
-      </LabelStyle>
     </Style>
 
-    <!-- ===== BUILDING 1: Sai Apartments ===== -->
+    <!-- ===== BUILDING 1: Sai Apartments (Larger Polygon) ===== -->
     <Placemark>
       <name>Sai Apartments</name>
-      <styleUrl>#redBorderWithLabel</styleUrl>
+      <styleUrl>#redBuildingStyle</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.9080,18.5920,0
-              73.9085,18.5920,0
-              73.9085,18.5925,0
-              73.9080,18.5925,0
-              73.9080,18.5920,0
+              73.9070,18.5920,0
+              73.9080,18.5920,0  <!-- Wider span (~100m) -->
+              73.9080,18.5930,0
+              73.9070,18.5930,0
+              73.9070,18.5920,0  <!-- Close the polygon -->
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
-      <Point>
-        <coordinates>73.90825,18.59225,0</coordinates>  <!-- Label position (center) -->
-      </Point>
     </Placemark>
 
     <!-- ===== BUILDING 2: Godhpadi Heights ===== -->
     <Placemark>
       <name>Godhpadi Heights</name>
-      <styleUrl>#redBorderWithLabel</styleUrl>
+      <styleUrl>#redBuildingStyle</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.9070,18.5915,0
-              73.9075,18.5915,0
-              73.9075,18.5920,0
-              73.9070,18.5920,0
-              73.9070,18.5915,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-      <Point>
-        <coordinates>73.90725,18.59175,0</coordinates>  <!-- Label position -->
-      </Point>
-    </Placemark>
-
-    <!-- ===== BUILDING 3: Pune Residency ===== -->
-    <Placemark>
-      <name>Pune Residency</name>
-      <styleUrl>#redBorderWithLabel</styleUrl>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <coordinates>
-              73.9090,18.5910,0
+              73.9085,18.5910,0
               73.9095,18.5910,0
-              73.9095,18.5915,0
-              73.9090,18.5915,0
-              73.9090,18.5910,0
+              73.9095,18.5920,0
+              73.9085,18.5920,0
+              73.9085,18.5910,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
-      <Point>
-        <coordinates>73.90925,18.59125,0</coordinates>  <!-- Label position -->
-      </Point>
     </Placemark>
   </Document>
 </kml>
