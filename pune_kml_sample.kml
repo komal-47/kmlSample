@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Godhpadi Buildings (Visible Boundaries)</name>
-       <name>Sai Apartments</name>
+    <name>KK Empire</name>
+    <name>Reliance Fresh</name>
     <!-- Style for RED BOUNDARIES -->
     <Style id="redBuildingStyle">
       <LineStyle>
         <color>ff0000ff</color>  <!-- Solid red border -->
-        <width>2</width>        <!-- Thicker border -->
+        <width>2</width>
       </LineStyle>
       <PolyStyle>
         <color>33ff0000</color>  <!-- Semi-transparent red fill -->
-        <fill>1</fill>          <!-- Enable fill -->
+        <fill>1</fill>
       </PolyStyle>
     </Style>
 
-    <!-- ===== BUILDING 1: Sai Apartments (Larger Polygon) ===== -->
+    <!-- ===== KK Empire ===== -->
     <Placemark>
-      <name>Sai Apartments</name>
+      <name>KK Empire</name>
       <styleUrl>#redBuildingStyle</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.9070,18.5920,0
-              73.9080,18.5920,0  <!-- Wider span (~100m) -->
-              73.9080,18.5930,0
-              73.9070,18.5930,0
-              73.9070,18.5920,0  <!-- Close the polygon -->
+              73.9076,18.5207,0
+              73.9080,18.5207,0
+              73.9080,18.5210,0
+              73.9076,18.5210,0
+              73.9076,18.5207,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
 
-    <!-- ===== BUILDING 2: Godhpadi Heights ===== -->
+    <!-- ===== Reliance Fresh ===== -->
     <Placemark>
-      <name>Godhpadi Heights</name>
+      <name>Reliance Fresh</name>
       <styleUrl>#redBuildingStyle</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
-              73.9085,18.5910,0
-              73.9095,18.5910,0
-              73.9095,18.5920,0
-              73.9085,18.5920,0
-              73.9085,18.5910,0
+              73.9105,18.5198,0
+              73.9109,18.5198,0
+              73.9109,18.5201,0
+              73.9105,18.5201,0
+              73.9105,18.5198,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
+
   </Document>
 </kml>
